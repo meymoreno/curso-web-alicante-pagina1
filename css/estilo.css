@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+*{
+ box-sizing: border-box;
+}
+
+@font-face{
+font-family: "Calligraffitti", cursive;
+font-family: "Bilbo Swash Caps", cursive;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+}
+
+.c1 {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas:
+    "nombre conoceme proyecto contacto"
+    "AT nada nada nada";             
+    margin: none;
+    padding: center;
+
+}
+
+.conoceme{ 
+    grid-area: conoceme; 
+}
+
+.proyecto{ 
+    grid-area: proyecto; 
+}
+
+.contacto { 
+    grid-area: contacto; 
+}
+
+.nada{ 
+    grid-area: nada; 
+}
+
+
+.c1 > div{
+    text-align: center;
+}
+
+ 
+#nombre{
+    grid-area: "nombre";
+    font-family: "Calligraffitti", cursive;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    text-align: left;
+}
+#AT{
+    grid-area:"AT";
+    font-family: "Bilbo Swash Caps", cursive;
+    color: black;
+    font size: 15px;
+    text-align: left;
+}
+
+#nada{
+    background:white
+}
+
+/*
+ul{
+
+	display: block;
+    background-color: #333333;
+    font-family: "Calligraffitti", cursive;
+}
+*/
+#conoceme , #proyectos , #contacto{
+    font-family: "Bilbo Swash Caps", cursive;
+    color:white;
+    background: black;
+    cursor: col-resize;
+}
+
+a{ 
+    color:white; 
+    } 
+    
+a:hover{ 
+    color:white; 
+    } 
+
+#secion1{
+    padding: 10px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin:0px 0px 0px 10px;
+}
+
+.imagen1{
+    grid-area: imagen1; 
+    
+}
+
+.texto1{
+    grid-area: texto; 
+    
+}
+
+#entrada1{
+    text-align: center;
+    margin: 0.1px;
+}
+
+#textoentrada1{
+    text-align: center;
+    margin: 0px;
+    border:0px;
+}
+
+#imagen1{
+    width: 50%;
+    margin:auto;
+    
+}
